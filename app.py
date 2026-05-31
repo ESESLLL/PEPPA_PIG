@@ -179,4 +179,7 @@ if st.session_state.answered:
 st.markdown("---")
 if st.session_state.stars >= 10:
     st.markdown("<h2 style='text-align:center'>🏆 哇！你是數學小天才！🐷👑</h2>", unsafe_allow_html=True)
-elif st.session_state.st
+elif st.session_state.stars >= 5:
+    st.markdown("<h2 style='text-align:center'>🌟 做得很好！繼續加油！</h2>", unsafe_allow_html=True)
+else:
+    st.markdown("<h3 style='text-align:center; color:#888'>加油！答對 5 題就有驚喜喔！🎈</h3>", unsafe_allow_html=True)
